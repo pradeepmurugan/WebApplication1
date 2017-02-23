@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "TestView";
+}
+
+<h1>Student</h1>
+
+<h1>Student</h1>
+
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Class</th>
+    </tr>
+    @foreach (var student in Model)
+    {
+        <tr>
+            <td>@student.FirstName</td>
+            <td>@student.LastName</td>
+            <td>@student.Class</td>
+        </tr>
+    }
+</table>
